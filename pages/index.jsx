@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, CSSProperties } from "react";
+import React, { useState, useEffect, useMemo} from "react";
 import { Line } from "@ant-design/plots";
 const DemoLine = () => {
   const [data, setData] = useState([]);
@@ -34,7 +34,7 @@ const DemoLine = () => {
       showMarkers: false,
     },
   };
-  const styles: CSSProperties = useMemo(() => {
+  const styles= useMemo(() => {
     if (width) {
       return {
         width: `${width}px`,
