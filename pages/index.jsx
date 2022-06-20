@@ -9,7 +9,7 @@ const DemoLine = () => {
 
   const asyncFetch = async () => {
     const K = 1;
-    const result1 = await fetch("http://43.129.181.196/btcactiveaddress");
+    const result1 = await fetch("/btcactiveaddress.json");
     const result2 = await result1.json();
     const ActiveBTCS = result2.map(([date, value]) => ({
       date,
